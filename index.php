@@ -13,7 +13,7 @@ require_once('config.php');
 if(isset($_POST['actionLogin'])){
     $user_nickname = strip_tags(trim($_POST['user_nickname']));
     $user_password = sha1((strip_tags(trim($_POST['user_password'])));
-    if sent values are empty
+    //if sent values are empty
     if(empty($user_nickname) || empty($user_password)){
         echo "space";
     }else{
