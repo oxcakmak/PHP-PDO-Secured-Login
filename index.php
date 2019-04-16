@@ -7,6 +7,8 @@ Website: http://oxcakmak.com/
 Country: Turkey [TR]
 */
 //If you have post request
+//strip_tags: clears html tags
+//trim: removes blanks
 require_once('config.php');
 if(isset($_POST['actionLogin'])){
     $user_nickname = strip_tags(trim($_POST['user_nickname']));
